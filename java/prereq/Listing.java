@@ -36,5 +36,6 @@ public class Listing {
       // TODO: Complete this to print out the information of the Listing
       System.out.println("Item: " + title);
       System.out.println("\tPrice: " + price);
+      System.out.println("\tDescription: " + description);
    }
 }
