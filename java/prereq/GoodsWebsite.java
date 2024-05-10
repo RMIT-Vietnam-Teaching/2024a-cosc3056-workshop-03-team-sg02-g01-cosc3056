@@ -11,8 +11,25 @@ public class GoodsWebsite {
 
       // TODO: Create three listings, setting the properties,
       //       and add to the database
-      Listing item = new Listing();
-      database.addListing(item);
+      Listing item1 = new Listing();
+      Listing item2 = new Listing();
+      Listing item3 = new Listing();
+
+      // TODO: Create three listings, setting the properties
+      item1.setTitle("Orange");
+      item1.setPrice(4.0);
+      item1.setDesc("New Zealand Orange");
+
+      item2.setTitle("Apple");
+      item2.setPrice(5.5);
+      item2.setDesc("US Gala Apple");
+
+      item3.setTitle("Grape");
+      item3.setPrice(7.0);
+      item3.setDesc("Vietnam Green Grape");
+      database.addListing(item1);
+      database.addListing(item2);
+      database.addListing(item3);
       
       // Get the number of items in the database
       int count = database.getDatabaseSize();
