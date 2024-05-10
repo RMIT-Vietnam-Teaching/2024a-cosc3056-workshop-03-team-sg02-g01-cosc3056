@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class GoodsDatabase {
 
    private ArrayList<Listing> goods;
+   private ArrayList<Listing> a = new ArrayList<Listing>();
 
    public GoodsDatabase() {
       // Make goods an empty ArrayList of Listings
@@ -24,12 +25,18 @@ public class GoodsDatabase {
 
    public ArrayList<Listing> getAllListings() {
       // TODO: Implement
-      return new ArrayList<Listing>();
+      return goods;
    }
 
    public ArrayList<Listing> getListingsByTitle(String title) {
       // TODO: Implement
-      return new ArrayList<Listing>();
+      
+      for(Listing listing: goods) {
+         if (listing.getTitle().equals(title)) {
+            a.add(listing);
+         }
+      }
+      return a;
    }
 
 }

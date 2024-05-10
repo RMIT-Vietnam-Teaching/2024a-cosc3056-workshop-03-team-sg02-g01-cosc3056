@@ -46,7 +46,7 @@ public class GoodsWebsite {
 
 
       // TODO: Output all of the items that match a given title
-      String title = "Title";
+      String title = "Orange";
       System.out.println("All listing in the database that match '" + title + "':");
       allItems = database.getListingsByTitle(title);
       for(Listing listing : allItems) {
